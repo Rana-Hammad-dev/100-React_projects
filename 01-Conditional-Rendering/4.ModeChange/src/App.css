@@ -55,3 +55,8 @@
 .modechange h1 {
     animation: fadeIn 0.7s ease-in-out;
 }
+@media (max-width:650px) {
+   .modechange h1{
+        font-size: 1em;
+    }
+}
