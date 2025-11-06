@@ -1,0 +1,57 @@
+.modechange {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    gap: 2em;
+    font-size: 3em;
+    transition: background-color 0.8s ease, color 0.8s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.dark {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.light {
+    background-color: #f9f9f9;
+    color: black;
+}
+
+.icon {
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modechange h1 {
+    animation: fadeIn 0.7s ease-in-out;
+}
