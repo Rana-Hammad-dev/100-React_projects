@@ -1,0 +1,31 @@
+.maincontainer {
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 3em;
+    padding: 2em;
+}
+
+.maincontainer h1 {
+    font-size: 4em;
+    transition: 0.3s;
+}
+
+.productlist {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+@media (max-width:450px) {
+    .maincontainer h1 {
+        font-size: 2.4em;
+    }
+}
