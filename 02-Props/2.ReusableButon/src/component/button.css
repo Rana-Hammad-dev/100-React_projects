@@ -1,0 +1,13 @@
+button {
+    width: 160px;
+    height: 45px;
+    border-radius: 7px;
+    border: none;
+    font-size: 1.3em;
+    transition: 0.2s;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.1)
+}
