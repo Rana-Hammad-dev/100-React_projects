@@ -1,0 +1,70 @@
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+h1 {
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    width: 80%;
+    height: 2em;
+    font-size: 1.2em;
+    padding: 1em;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    color: #555;
+    transition: .3s;
+}
+
+input:hover {
+    transform: scale(1.05);
+}
+
+.filter {
+    width: 40%;
+    padding: 1em;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    border-radius: 7px;
+    transition: .3s;
+}
+
+.filter:hover {
+    transform: scale(1.05);
+}
+
+.filter h1 {
+    color: green;
+    font-size: 1.5em;
+}
+
+.filter h2 {
+    color: blueviolet;
+}
+
+@media (max-width:800px) {
+    h1 {
+        font-size: 1.4em;
+    }
+
+    .filter {
+        width: 80%;
+    }
+
+    .filter h1 {
+        font-size: 1em;
+    }
+}
